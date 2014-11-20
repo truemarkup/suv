@@ -239,6 +239,29 @@ svnr.nav = function() {
   });
 };
 
+svnr.scrollTo = function() {
+  $(document).on('click.scr', function(e) {
+    var target = $(e.target);
+
+    if ( target.parents('a').length ) {
+      target = target.closest('a');
+    }
+
+    if ( target.hasClass('l-scrollto') ) {
+      var id = target.attr('href');
+
+      id = id.substr(id.indexOf('#'));
+      id = $(id);
+
+      if ( id.length ) {
+        $(window).scrollTo(id, 450, 'linear');
+      }
+
+      return false;
+    }
+  });
+};
+
 // init
 $(function() {
   svnr.validate();
@@ -254,4 +277,5 @@ $(function() {
   });
   svnr.item.init();
   svnr.nav();
+  svnr.scrollTo();
 });
