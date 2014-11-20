@@ -2986,6 +2986,61 @@ textarea.field {
   background: url(../images/bg/star.png) 0 -30px repeat-x;
 }
 
+.badge-bonus {
+  position: relative;
+  display: inline-block;
+  color: #993339;
+  vertical-align: middle;
+  background: #ffc30d;
+  font: 24px/38px "helvetica_neue_condensedCnBd", sans-serif;
+  padding: 5px 40px;
+  border: solid #9a363e;
+  border-radius: 0 5px 5px 0;
+  border-width: 1px 1px 1px 0;
+}
+.badge-bonus span {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 36px;
+  padding-bottom: 5px;
+}
+.badge-bonus span:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border: 1px solid #9a363e;
+  border-radius: 4px;
+  margin-top: -4px;
+  z-index: 2;
+}
+.badge-bonus:before, .badge-bonus:after {
+  content: "";
+  position: absolute;
+}
+.badge-bonus:before {
+  left: -55px;
+  top: -1px;
+  width: 5px;
+  height: 5px;
+  border: 25px outset transparent;
+  border-right-color: #9a363e;
+  border-right-style: solid;
+}
+.badge-bonus:after {
+  left: -28px;
+  top: 1px;
+  width: 4px;
+  height: 4px;
+  border: outset transparent;
+  border-width: 23px 24px 23px 0;
+  border-right-color: #ffc30d;
+  border-right-style: solid;
+}
+
 /* footer */
 .footer {
   background: #99343c;
