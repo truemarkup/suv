@@ -525,6 +525,34 @@ a:hover .header-cart-icon {
   text-decoration: underline;
 }
 
+.user-nav {
+  position: absolute;
+  left: 35.15625%;
+  top: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: 16px/19px "Conv_Helvetica Neue", sans-serif;
+}
+.user-nav li {
+  display: inline-block;
+  vertical-align: middle;
+}
+.user-nav li:before {
+  content: "/";
+  font: 16px/19px "Conv_Helvetica Neue", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffc100;
+  margin: 0 2px;
+}
+.user-nav li:first-child:before {
+  display: none;
+}
+.user-nav a {
+  color: #ffc100;
+}
+
 /* sweet alert */
 .sweet-overlay {
   background-color: rgba(0, 0, 0, 0.4);
@@ -2761,6 +2789,201 @@ textarea.field {
   width: 100%;
   height: 0;
   padding-bottom: 81.25%;
+}
+
+.articles {
+  padding-top: 60px;
+}
+.articles .page-header {
+  padding-bottom: 10px;
+}
+.articles-list {
+  padding-bottom: 40px;
+}
+.articles-item {
+  padding-top: 20px;
+  font: 16px/19px "Conv_Helvetica Neue", sans-serif;
+  color: #463f40;
+}
+.articles-item-header {
+  font: 18px/20px "helvetica_neue_condensedCnBd", sans-serif;
+}
+.articles-item-header a {
+  color: #444;
+  text-decoration: none;
+}
+.articles-item-header a:hover {
+  text-decoration: underline;
+  color: #99363c;
+}
+.articles-item-date {
+  padding: 0 0 2px;
+  color: #99333b;
+  font: 14px/16px "helvetica_neue_condensedCnBd", sans-serif;
+}
+.articles-item-footer {
+  padding-top: 5px;
+  text-align: right;
+  font: 16px/18px "helvetica_neue_condensedCnBd", sans-serif;
+  color: #99333b;
+}
+.articles-item-footer a {
+  color: #99333b;
+}
+
+.header-badge {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background: #99343c;
+  color: #ffc30d;
+  margin: 0 0 6px 50px;
+  font: 12px/14px "helvetica_neue_condensedCnBd", sans-serif;
+  padding: 5px 6px 5px 12px;
+}
+.header-badge:before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: outset transparent;
+  border-width: 12px 0 12px 12px;
+  border-left-style: solid;
+  border-left-color: #99343c;
+}
+
+.col-news-inp {
+  width: 48.57%;
+}
+
+.row-news-submit {
+  padding-top: 20px;
+}
+
+.col-news-submit {
+  width: 22.857%;
+}
+
+.cab-header {
+  margin-top: 40px;
+}
+
+.userpic {
+  float: left;
+  border: 1px solid #99353d;
+}
+.userpic-tools {
+  text-align: center;
+}
+.userpic-tools p {
+  margin: 0;
+  padding: 12px;
+}
+.userpic-tools p a {
+  color: #99343c;
+}
+
+.history-list {
+  padding: 15px 0 0;
+}
+.history-item {
+  font-size: 0;
+}
+.history-item-side {
+  padding-top: 27px;
+  float: right;
+}
+.history-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16.927%;
+  margin-right: 4.3%;
+}
+.history-img-holder {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 93.75%;
+  border: 1px dashed #ca9398;
+}
+.history-img-holder img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.history-text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+}
+.history-name {
+  padding: 10px 0;
+  font: 20px/22px "helvetica_neue_condensedCnBd", sans-serif;
+  color: #444;
+}
+.history-name a {
+  color: #444;
+  text-decoration: none;
+}
+.history-name a:hover {
+  text-decoration: underline;
+}
+
+.l-add-review {
+  font: 16px/18px "helvetica_neue_condensedCnBd", sans-serif;
+  color: #99343c;
+}
+
+.form-submit {
+  text-align: right;
+  margin-top: 40px;
+}
+
+.btn-submit {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 24px;
+  position: relative;
+  background: #99343c;
+  color: #ffc30d;
+  width: 185px;
+  text-align: center;
+  font: 24px/28px "helvetica_neue_condensedCnBd", sans-serif;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-submit:before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: outset transparent;
+  border-width: 24px 0 24px 24px;
+  border-left-color: #99343c;
+  border-left-style: solid;
+}
+
+.star {
+  width: 125px;
+  height: 22px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  background: url(../images/bg/star.png) repeat-x;
+}
+.star span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  background: url(../images/bg/star.png) 0 -30px repeat-x;
 }
 
 /* footer */
