@@ -2947,13 +2947,25 @@ textarea.field {
   margin-right: 24px;
   position: relative;
   background: #99343c;
+  border: none;
+  cursor: pointer;
   color: #ffc30d;
   width: 185px;
   text-align: center;
   font: 24px/28px "helvetica_neue_condensedCnBd", sans-serif;
   padding: 10px;
   text-decoration: none;
+}
+.btn-submit input {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
   cursor: pointer;
+  font: 24px/28px "helvetica_neue_condensedCnBd", sans-serif;
+  color: #ffc30d;
 }
 .btn-submit:before {
   content: "";
