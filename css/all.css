@@ -1596,7 +1596,7 @@ a.mosaic {
 }
 .search-holder {
   background: #99343c;
-  padding: 45px 16.66666%;
+  padding: 42px 16.66666%;
   box-sizing: border-box;
 }
 .search-holder .search {
@@ -2950,7 +2950,7 @@ textarea.field {
   border: none;
   cursor: pointer;
   color: #ffc30d;
-  width: 185px;
+  min-width: 185px;
   text-align: center;
   font: 24px/28px "helvetica_neue_condensedCnBd", sans-serif;
   padding: 10px;
@@ -2966,6 +2966,9 @@ textarea.field {
   cursor: pointer;
   font: 24px/28px "helvetica_neue_condensedCnBd", sans-serif;
   color: #ffc30d;
+}
+.btn-submit input:focus {
+  outline: none;
 }
 .btn-submit:before {
   content: "";
