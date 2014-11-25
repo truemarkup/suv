@@ -1528,6 +1528,77 @@ a.mosaic {
   text-decoration: none;
 }
 
+.tile {
+  position: relative;
+  margin: 0 24px;
+}
+@media (min-width: 960px) {
+  .tile {
+    padding-bottom: 187.5%;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+}
+.tile.transparent {
+  display: none;
+}
+@media (min-width: 960px) {
+  .tile.transparent {
+    display: block;
+  }
+}
+.tile-list {
+  background: url(../images/bg/mosaic.png);
+}
+.tile-item {
+  font: 22px/24px "helvetica_neue_lightlight", sans-serif;
+  padding: 24px 10.15625% 0;
+}
+@media (min-width: 960px) {
+  .tile-item {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (min-width: 1150px) {
+  .tile-item {
+    font: 14px/17px "helvetica_neue_lightlight", sans-serif;
+  }
+}
+@media (min-width: 1280px) {
+  .tile-item {
+    font: 16px/19px "helvetica_neue_lightlight", sans-serif;
+  }
+}
+.tile-price {
+  padding: 12px 10.15625% 24px;
+  color: #99333b;
+  font: 30px/32px "helvetica_neue_condensedCnBd", sans-serif;
+}
+@media (min-width: 960px) {
+  .tile-price {
+    position: absolute;
+    padding: 0;
+    bottom: 15px;
+    left: 10.15625%;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 1150px) {
+  .tile-price {
+    bottom: 22px;
+    font: 22px/24px "helvetica_neue_condensedCnBd", sans-serif;
+  }
+}
+@media (min-width: 1280px) {
+  .tile-price {
+    bottom: 30px;
+    font: 24px/26px "helvetica_neue_condensedCnBd", sans-serif;
+  }
+}
+
 .mosaic {
   position: relative;
   margin: 0 24px;
@@ -1538,6 +1609,9 @@ a.mosaic {
     height: 0;
     margin: 0;
     overflow: hidden;
+  }
+  .mosaic-bg {
+    overflow: visible;
   }
 }
 .mosaic.transparent {
@@ -1681,7 +1755,7 @@ a.mosaic {
   position: relative;
   z-index: 2;
 }
-.mosaic-title:before {
+.mosaic-title .mosaic-bg:before {
   content: "";
   position: absolute;
   left: 50%;
@@ -1689,13 +1763,14 @@ a.mosaic {
   width: 0;
   height: 0;
   border: 24px outset transparent;
+  z-index: 2;
 }
-.mosaic-title-btm:before {
+.mosaic-title-btm .mosaic-bg:before {
   bottom: -48px;
   border-top-color: #ffc30d;
   border-top-style: solid;
 }
-.mosaic-title-top:before {
+.mosaic-title-top .mosaic-bg:before {
   top: -48px;
   border-bottom-color: #ffc30d;
   border-bottom-style: solid;
