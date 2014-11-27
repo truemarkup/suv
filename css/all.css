@@ -569,6 +569,7 @@ a:hover .header-cart-icon {
   font: 24px/27px "helvetica_neue_condensedCnBd", sans-serif;
   padding: 10px 0;
   text-align: center;
+  text-transform: uppercase;
 }
 @media (min-width: 960px) {
   .topnav li {
@@ -589,9 +590,9 @@ a:hover .header-cart-icon {
 }
 @media (min-width: 1280px) {
   .topnav li {
-    font-size: 16px;
-    line-height: 18px;
-    margin-left: 30px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-left: 15px;
   }
 }
 .topnav li:first-child {
@@ -615,8 +616,8 @@ a:hover .header-cart-icon {
 @media (min-width: 960px) {
   .user-nav {
     position: absolute;
-    left: 35.15625%;
-    top: 35px;
+    right: 5%;
+    bottom: 15px;
     text-align: left;
     padding-top: 0;
   }
@@ -2090,7 +2091,7 @@ a.mosaic {
   vertical-align: middle;
   width: 53%;
   color: #444;
-  font: 26px/28px "helvetica_neue_condensedCnBd", sans-serif;
+  font: 20px/22px "helvetica_neue_condensedCnBd", sans-serif;
   text-transform: uppercase;
 }
 @media (min-width: 960px) {
@@ -2114,8 +2115,8 @@ a.mosaic {
 }
 .navbar-item-price {
   color: #99333b;
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 22px;
+  line-height: 24px;
   text-transform: none;
 }
 @media (min-width: 960px) {
