@@ -1842,40 +1842,30 @@ a.mosaic {
 .search-holder .search {
   margin-bottom: 0;
 }
-.search:before {
-  content: "";
-  position: absolute;
-  right: -60px;
-  top: -1px;
-  width: 0;
-  height: 0;
-  border: outset transparent;
-  border-width: 30px 30px 31px 30px;
-  border-left-color: #fec10e;
-  border-left-style: solid;
-}
 @media (min-width: 960px) {
   .search:before {
-    border-width: 24px;
-    right: -49px;
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: -1px;
+    width: 0;
+    height: 0;
+    border: outset transparent;
+    border-width: 30px 30px 31px 30px;
+    border-left-color: #fec10e;
+    border-left-style: solid;
   }
-}
-.search:after {
-  content: "";
-  position: absolute;
-  right: -57px;
-  top: 0;
-  width: 0;
-  height: 0;
-  border: outset transparent;
-  border-width: 29px 29px 30px 29px;
-  border-left-color: #483f42;
-  border-left-style: solid;
-}
-@media (min-width: 960px) {
   .search:after {
-    border-width: 23px;
-    right: -46px;
+    content: "";
+    position: absolute;
+    right: -57px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: outset transparent;
+    border-width: 29px 29px 30px 29px;
+    border-left-color: #483f42;
+    border-left-style: solid;
   }
 }
 .search-input {
@@ -1883,8 +1873,8 @@ a.mosaic {
   width: 100%;
   box-sizing: border-box;
   margin: 0;
-  padding: 15px 15px 15px 18px;
-  font: 24px/26px "Conv_Helvetica Neue", sans-serif;
+  padding: 21px 15px 21px 18px;
+  font: 15px/17px "Conv_Helvetica Neue", sans-serif;
   color: #fff;
   background: none;
   border: none;
@@ -1915,7 +1905,7 @@ a.mosaic {
   right: 0;
   top: 0;
   width: 64px;
-  height: 60px;
+  height: 100%;
   border-left: solid #fec10e;
   border-width: 0 0 0 1px;
   background: url(../images/bg/search-button.png) 50% no-repeat;
@@ -1923,11 +1913,6 @@ a.mosaic {
   overflow: hidden;
   cursor: pointer;
   z-index: 2;
-}
-@media (min-width: 960px) {
-  .search-button {
-    height: 46px;
-  }
 }
 
 .text-page {
