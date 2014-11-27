@@ -160,8 +160,14 @@ svnr.item = {
       }
 
       function __crsReset() {
+        var viewportWidth = document.compatMode == 'CSS1Compat' && !window.opera ? document.documentElement.clientWidth : document.body.clientWidth;
         crs_w = crs_slicer.width();
-        crs_width = crs_w/crs_vis;
+        if ( viewportWidth < 960 ) {
+          crs_width = crs_w;
+        } else {
+          crs_width = crs_w/crs_vis;
+        }
+
         crs_item.css('width', crs_width);
         crs_node.css({
           position: 'relative',
