@@ -147,6 +147,7 @@ svnr.item = {
           crs_prev = $(settings.prev, crs),
           crs_next = $(settings.next, crs),
           crs_vis = settings.visible || 3,
+          crs_vis_set = crs_vis,
           crs_current = 0,
           crs_speed = settings.speed || 250;
 
@@ -156,15 +157,19 @@ svnr.item = {
         crs_node.css({
           width: '100%'
         });
-        return;
       }
 
       function __crsReset() {
         var viewportWidth = document.compatMode == 'CSS1Compat' && !window.opera ? document.documentElement.clientWidth : document.body.clientWidth;
+
+        crs_current = 0;
         crs_w = crs_slicer.width();
+
         if ( viewportWidth < 960 ) {
+          crs_vis = 1;
           crs_width = crs_w;
         } else {
+          crs_vis = crs_vis_set;
           crs_width = crs_w/crs_vis;
         }
 
@@ -174,6 +179,14 @@ svnr.item = {
           width: crs_width*crs_len,
           left: -crs_current*crs_width
         });
+
+        if ( crs_width*crs_len > crs_w ) {
+          crs_prev.show();
+          crs_next.show();
+        } else {
+          crs_prev.hide();
+          crs_next.hide();
+        }
       }
       __crsReset();
       $(window).on('resize.crs', function() {
@@ -201,6 +214,7 @@ svnr.item = {
       });
 
       crs_next.on('click.crs', function() {
+
         if (crs_current < crs_len - crs_vis) {
           crs_current++;
         } else {
